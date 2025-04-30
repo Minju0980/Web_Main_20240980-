@@ -15,6 +15,8 @@
                 color: black;
             }
         </style>
+        <script type="text/javascript" defer src="js/basic_js_test.js"></script>
+        <script type="text/javascript" defer src="js/search.js"></script>
     </head> 
     <body style="background-color: white;">
         <div style = "display: flex; justify-content: center;">
@@ -24,8 +26,6 @@
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="#">게임소개</a> 
-    
-                      
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -53,13 +53,9 @@
                             <a class="nav-link disabled" aria-disabled="true">게시판</a>
                           </li>
                         </ul>
-                        <!-- <form class="d-flex" role="search">
+                        <form class="d-flex" role="search">
                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                           <button class="btn btn-outline-success" id = "search_btn" type="submit">검색하기</button>
-                        </form> -->
-                        <form class="d-flex" role="search" onsubmit="return googleSearch();">
-                          <input class="form-control me-2" id="search_input" name="q" type="search" placeholder="키워드 입력" aria-label="Search">
-                          <button class="btn btn-outline-success" id="search_btn" type="submit">검색하기</button>
                         </form>
                       </div>
                     </div>
@@ -67,13 +63,22 @@
                   </nav>
         </div>
         <div style = "display: flex; justify-content: center;">
-            <a href = "index.html" target = "_blank"><img src = "image/Steam_main.jpg" width="1280" height="720"></a>
+            <a href = "index.html" target = "_blank"><img src = "image/Steam_main.jpg" class="img-fluid" width="1280" height="720"></a>
         </div>
         <div style = "display: flex; justify-content: center;">
-            <table class = "table" border ="1">
+            <table class = "table" border ="1" style="caption-side: top;">
                 <caption>인기 캐릭터</caption>
-                <tbody>
+                <tbody class = "table-group-divider">
                     <tr bgcolor = "red">
+                         <td class="table-primary">사이온</td>
+                         <td class="table-primary"><img src = "image/아리.jpeg" width = "100" height = "50"></td><td class="table-primary">아리</td>
+                    </tr>
+                   <tr>
+                    <td class = "table-primary" width = "80" colspan = "3"><a href = "https://store.steampowered.com/" target = "_blank">웹페이지 클릭</td></a>
+                   </tr>>
+                </tbody  class = "table-group-divider">
+
+                    <!-- <tr bgcolor = "red">
                         <td width = "80" rowspan = "2">사이온</td>
                         <td>아리</td>
                         <td>가렌</td>
@@ -91,8 +96,8 @@
                         <td>루시안</td>
                         <td>루시안2</td>
                         <td colspan = "2"><font size = "13">바이1, 2</font></td>
-                    </tr>
-                </tbody>
+                    </tr> -->
+
             </table>
         </div>
         <hr>
